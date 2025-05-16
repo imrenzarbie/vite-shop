@@ -10,19 +10,17 @@ interface CartItem {
 }
 
 interface CartSidebarProps {
-    isOpen: boolean;
-    onOpenChange: (isOpen: boolean) => void;
     cartItems: CartItem[];
 }
 
-const CartSidebar = ({ isOpen, onOpenChange, cartItems }: CartSidebarProps) => {
+const CartSidebar = ({ cartItems }: CartSidebarProps) => {
     const totalAmount = cartItems.reduce(
         (sum, item) => sum + item.price * item.quantity,
         0
     );
 
     return (
-        <aside className="w-full border-l bg-background p-6  md:w-64  lg:w-80 order-1 md:order-2">
+        <aside className="w-full border-l bg-background p-6  md:w-64  lg:w-80 order-1 md:order-2 h-full">
             <div className="flex h-full flex-col">
                 <h2 className="mb-4 text-xl font-semibold">Your Cart</h2>
                 <ScrollArea className="flex-1">

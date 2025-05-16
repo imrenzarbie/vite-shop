@@ -5,7 +5,6 @@ import { Badge } from "./ui/badge";
 
 interface HeaderProps {
     cartItemCount: number;
-    onCartClick: () => void;
 }
 
 const Header = ({ cartItemCount = 0 }: HeaderProps) => {
