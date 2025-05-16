@@ -2,12 +2,15 @@ import { ScrollArea } from "../ui/scroll-area";
 import CartItemList from "./cart-item-list";
 import CartSummary from "./cart-summary";
 import EmptyCartMessage from "./empty-cart";
+import useCartItemQuantityChange from "./hooks/useCartItemQuantityChange";
 import { CartItem } from "./types/cart-item.type";
 
 interface CartSidebarProps {
     cartItems: CartItem[];
 }
 const CartSidebar = ({ cartItems }: CartSidebarProps) => {
+    const { handleCartItemQuantityChange } = useCartItemQuantityChange();
+
     const totalAmount = cartItems.reduce(
         (sum, item) => sum + item.price * item.quantity,
         0
@@ -21,7 +24,10 @@ const CartSidebar = ({ cartItems }: CartSidebarProps) => {
                     {cartItems.length === 0 ? (
                         <EmptyCartMessage />
                     ) : (
-                        <CartItemList cartItems={cartItems} />
+                        <CartItemList
+                            cartItems={cartItems}
+                            onQuantityChange={handleCartItemQuantityChange}
+                        />
                     )}
                 </ScrollArea>
                 {cartItems.length > 0 && (
