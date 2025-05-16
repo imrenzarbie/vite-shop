@@ -1,0 +1,212 @@
+[
+    {
+        "id": "prod_001",
+        "name": "Quantum Widget X",
+        "price": 29.99,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+1",
+        "description": "The latest Quantum Widget with enhanced features and sleek design."
+    },
+    {
+        "id": "prod_002",
+        "name": "Nova Gadget Pro",
+        "price": 49.5,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+2",
+        "description": "Professional grade Nova Gadget for all your advanced needs."
+    },
+    {
+        "id": "prod_003",
+        "name": "Eco-Friendly Sprout",
+        "price": 19.95,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+3",
+        "description": "Sustainable and eco-conscious Sprout, perfect for green living."
+    },
+    {
+        "id": "prod_004",
+        "name": "Stealth Ninja Tool",
+        "price": 75.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+4",
+        "description": "A versatile tool for the modern urban ninja. Discretion guaranteed."
+    },
+    {
+        "id": "prod_005",
+        "name": "Comfy Cloud Pillow",
+        "price": 34.99,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+5",
+        "description": "Experience ultimate comfort with our revolutionary cloud pillow."
+    },
+    {
+        "id": "prod_006",
+        "name": "Retro Game Console",
+        "price": 89.99,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+6",
+        "description": "Relive the classics with this compact retro game console."
+    },
+    {
+        "id": "prod_007",
+        "name": "Smart Coffee Mug",
+        "price": 42.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+7",
+        "description": "Keeps your coffee at the perfect temperature for hours."
+    },
+    {
+        "id": "prod_008",
+        "name": "Portable Solar Charger",
+        "price": 55.75,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+8",
+        "description": "Charge your devices on the go with the power of the sun."
+    },
+    {
+        "id": "prod_009",
+        "name": "Minimalist Desk Lamp",
+        "price": 28.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+9",
+        "description": "Elegant and simple lighting solution for your workspace."
+    },
+    {
+        "id": "prod_010",
+        "name": "Gourmet Spice Set",
+        "price": 39.99,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+10",
+        "description": "A curated collection of exotic spices for culinary enthusiasts."
+    },
+    {
+        "id": "prod_011",
+        "name": "Acoustic Guitar Strings",
+        "price": 12.5,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+11",
+        "description": "High-quality strings for a rich and vibrant sound."
+    },
+    {
+        "id": "prod_012",
+        "name": "Yoga Mat Deluxe",
+        "price": 45.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+12",
+        "description": "Extra thick and non-slip mat for your yoga practice."
+    },
+    {
+        "id": "prod_013",
+        "name": "Bluetooth Speaker Mini",
+        "price": 33.25,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+13",
+        "description": "Compact yet powerful sound for music lovers on the move."
+    },
+    {
+        "id": "prod_014",
+        "name": "Travel Backpack Lite",
+        "price": 68.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+14",
+        "description": "Lightweight and durable backpack, perfect for weekend trips."
+    },
+    {
+        "id": "prod_015",
+        "name": "Artisan Soap Bar",
+        "price": 8.99,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+15",
+        "description": "Handcrafted soap with natural ingredients and delightful scents."
+    },
+    {
+        "id": "prod_016",
+        "name": "Wireless Mouse Ergo",
+        "price": 24.5,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+16",
+        "description": "Ergonomically designed wireless mouse for comfortable use."
+    },
+    {
+        "id": "prod_017",
+        "name": "Insulated Water Bottle",
+        "price": 22.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+17",
+        "description": "Keeps drinks cold for 24 hours or hot for 12 hours."
+    },
+    {
+        "id": "prod_018",
+        "name": "Sketchbook Pro",
+        "price": 15.75,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+18",
+        "description": "Premium quality sketchbook for artists of all levels."
+    },
+    {
+        "id": "prod_019",
+        "name": "Indoor Herb Garden Kit",
+        "price": 30.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+19",
+        "description": "Grow your own fresh herbs right in your kitchen."
+    },
+    {
+        "id": "prod_020",
+        "name": "Digital Photo Frame",
+        "price": 79.99,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+20",
+        "description": "Display your favorite memories with this sleek digital frame."
+    },
+    {
+        "id": "prod_021",
+        "name": "Electric Toothbrush Sonic",
+        "price": 65.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+21",
+        "description": "Advanced sonic technology for a superior clean."
+    },
+    {
+        "id": "prod_022",
+        "name": "Weighted Blanket Comfort",
+        "price": 99.5,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+22",
+        "description": "Promotes relaxation and better sleep with gentle pressure."
+    },
+    {
+        "id": "prod_023",
+        "name": "Noise-Cancelling Headphones",
+        "price": 149.99,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+23",
+        "description": "Immerse yourself in sound, free from distractions."
+    },
+    {
+        "id": "prod_024",
+        "name": "French Press Coffee Maker",
+        "price": 36.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+24",
+        "description": "Brew rich, flavorful coffee with this classic French press."
+    },
+    {
+        "id": "prod_025",
+        "name": "Resistance Band Set",
+        "price": 18.75,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+25",
+        "description": "Versatile resistance bands for a full-body workout anywhere."
+    },
+    {
+        "id": "prod_026",
+        "name": "Leather Wallet Slim",
+        "price": 48.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+26",
+        "description": "A stylish and slim genuine leather wallet."
+    },
+    {
+        "id": "prod_027",
+        "name": "Essential Oil Diffuser",
+        "price": 29.95,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+27",
+        "description": "Create a calming atmosphere with your favorite essential oils."
+    },
+    {
+        "id": "prod_028",
+        "name": "Board Game Classic",
+        "price": 25.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+28",
+        "description": "A timeless board game for family fun and strategic play."
+    },
+    {
+        "id": "prod_029",
+        "name": "Fitness Tracker Watch",
+        "price": 72.0,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+29",
+        "description": "Monitor your activity, sleep, and health metrics."
+    },
+    {
+        "id": "prod_030",
+        "name": "Silk Sleep Mask",
+        "price": 16.5,
+        "imageUrl": "https://placehold.co/600x400/EEE/31343C?text=Product+30",
+        "description": "Block out light for a restful night's sleep with this luxurious silk mask."
+    }
+]
