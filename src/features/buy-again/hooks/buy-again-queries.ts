@@ -2,41 +2,26 @@
 import { useQuery } from "@tanstack/react-query";
 import type { Product } from "../types/buy-again.types";
 
-const mockData: Product[] = [
-    {
-        id: "P-10001",
-        description: "Disposable Nitrile Gloves, Medium, Box of 100",
-        imageUrl: "https://via.placeholder.com/96x96.png?text=Gloves",
-        isBencoBrand: true,
-        isOnSpecial: false,
-        price: 14.99,
-    },
-    {
-        id: "P-10002",
-        description: "Surgical Masks Level 2, Blue, Box of 50",
-        imageUrl: "https://via.placeholder.com/96x96.png?text=Masks",
-        isBencoBrand: false,
-        isOnSpecial: true,
-        price: 8.49,
-    },
-    {
-        id: "P-10003",
-        description: "Hand Sanitizer 500ml Pump",
-        imageUrl: "https://via.placeholder.com/96x96.png?text=Sanitizer",
-        isBencoBrand: false,
-        isOnSpecial: false,
-        price: 5.25,
-    },
-];
+// ------------------------------------------------------------------
+// Dummy data – 20 products
+// ------------------------------------------------------------------
+const DUMMY_PRODUCTS: Product[] = Array.from({ length: 20 }, (_, i) => ({
+    id: `P${1000 + i + 1}`,
+    description: `Dummy Product ${i + 1} – Lorem ipsum dolor sit amet`,
+    imageUrl: `https://picsum.photos/seed/${i}/64`,
+    isBencoBrand: i % 3 === 0,
+    isOnSpecial: i % 4 === 0,
+    lastPurchased:
+        i % 5 === 0 ? undefined : `2024-0${(i % 9) + 1}-0${(i % 28) + 1}`,
+    price: 5 + i * 0.79,
+}));
 
 const fetchBuyAgain = async (): Promise<Product[]> =>
-    new Promise((resolve) => setTimeout(() => resolve(mockData), 400));
+    new Promise((resolve) => setTimeout(() => resolve(DUMMY_PRODUCTS), 300));
 
 export const useBuyAgainQuery = () =>
     useQuery({
         queryKey: ["buy-again"],
         queryFn: fetchBuyAgain,
         staleTime: 1000 * 60 * 5,
-        retry: 0,
-        refetchOnWindowFocus: false,
     });

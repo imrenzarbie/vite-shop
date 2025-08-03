@@ -1,6 +1,3 @@
-// src/features/buy-again/components/search-bar/search-bar.tsx
-import styles from "./search-bar.module.scss";
-
 interface Props {
     search: string;
     onSearch: (s: string) => void;
@@ -16,27 +13,33 @@ const SearchBar = ({
     onUnselectAll,
     onAddSelected,
 }: Props) => (
-    <div className={styles.bar}>
-        <label className={styles.inputWrap} aria-label="Search products">
-            <span aria-hidden="true">🔎</span>
+    <div className="flex flex-wrap items-center gap-3 mb-6">
+        <label className="flex items-center gap-2 text-sm">
+            Search:
             <input
-                className={styles.input}
                 type="text"
                 value={search}
                 onChange={(e) => onSearch(e.target.value)}
-                placeholder="Search by description"
+                className="bg-gray-800 border border-gray-700 rounded px-3 py-2 text-sm text-gray-100 focus:border-blue-500 focus:outline-none"
             />
         </label>
-        <button className={styles.btn} onClick={onSelectAll}>
+
+        <button
+            onClick={onSelectAll}
+            className="bg-gray-700 hover:bg-gray-600 text-sm text-gray-100 px-3 py-2 rounded">
             Select All Visible
         </button>
-        <button className={styles.btn} onClick={onUnselectAll}>
+
+        <button
+            onClick={onUnselectAll}
+            className="bg-gray-700 hover:bg-gray-600 text-sm text-gray-100 px-3 py-2 rounded">
             Unselect All
         </button>
+
         <button
-            className={`${styles.btn} ${styles.btnPrimary}`}
-            onClick={onAddSelected}>
-            Add Selected
+            onClick={onAddSelected}
+            className="bg-green-600 hover:bg-green-500 text-sm text-white px-3 py-2 rounded">
+            Add Selected to Cart
         </button>
     </div>
 );

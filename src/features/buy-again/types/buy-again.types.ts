@@ -5,7 +5,6 @@ export interface Product {
     imageUrl: string;
     isBencoBrand: boolean;
     isOnSpecial: boolean;
-    lastPurchasedIso?: string; // ISO-8601 timestamp
-    isFavorite?: boolean; // explicit flag instead of overloading lastPurchased
-    price: number; // demo; consider priceCents: number in prod
+    lastPurchased?: string; // undefined == favorite
+    price: number;
 }
