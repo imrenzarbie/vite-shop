@@ -22,7 +22,13 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
-        "composite": true
+        "composite": true,
+
+        /* Paths alias */
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
     },
     "include": ["src"]
 }

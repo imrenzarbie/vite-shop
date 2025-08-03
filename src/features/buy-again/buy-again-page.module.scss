@@ -1,0 +1,35 @@
+@use '../../styles/theme.vars.scss';
+
+.page {
+  color: var(--ba-color-text);
+  background: var(--ba-color-bg);
+  padding: var(--ba-space-5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--ba-space-3);
+  margin: 0 0 var(--ba-space-3) 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+.card {
+  background: var(--ba-color-surface);
+  border: 1px solid var(--ba-color-border);
+  border-radius: var(--ba-radius-lg);
+  box-shadow: var(--ba-shadow-2);
+  padding: var(--ba-space-5);
+}
+
+.helper {
+  color: var(--ba-color-text-muted);
+  margin-top: var(--ba-space-3);
+  font-size: var(--ba-font-size-sm);
+}

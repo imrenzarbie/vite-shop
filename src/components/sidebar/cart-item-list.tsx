@@ -2,7 +2,7 @@ import CartItemComponent from "./cart-item";
 import { CartItem } from "./types/cart-item.type";
 
 interface CartSidebarProps {
-    cartItems: CartItem[];
+    cartItems: ReadonlyArray<CartItem>;
     onQuantityChange: (itemId: string, newQuantity: number) => void;
 }
 

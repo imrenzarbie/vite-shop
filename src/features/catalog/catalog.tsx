@@ -10,6 +10,8 @@ import {
 } from "../../components/ui/pagination";
 import ProductCard, { Product } from "./components/product-card";
 import productsData from "./data/products.json";
+import Parent from "../scroll/parent";
+import Child from "../scroll/child";
 
 const ITEMS_PER_PAGE = 9; // Or 6, 12, etc.
 
@@ -128,6 +130,9 @@ const CatalogPage = () => {
             <h1 className="mb-8 text-center text-3xl font-bold sm:text-4xl">
                 Product Catalog
             </h1>
+            <Parent>
+                <Child />
+                </Parent>
             {currentProducts.length > 0 ? (
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                     {currentProducts.map((product) => (

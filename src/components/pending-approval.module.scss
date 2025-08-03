@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"); // Using Open Sans as a suitable sans-serif font
+
+/* Color Variables */
+$color-dark-blue: #3a567c;
+$color-light-gray: #e0e0e0;
+$color-border-gray: #adadad;
+$color-green-line: #7ec25f;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer; // Indicate interactivity
+  transition: opacity 0.2s ease-in-out; // Smooth transition for hover/active states
+
+  // Optional: Add hover effect if it's clickable
+  &:hover {
+    opacity: 0.85;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: flex-start; // Align top of checkbox with top of line
+  justify-content: center;
+  position: relative; // For positioning the green line relative to checkbox
+  width: 30px; // Controls the overall width of the icon area
+  height: 30px; // Controls the overall height of the icon area (approx. based on image scale)
+}
+
+.checkboxSvg {
+  width: 24px; // Size of the checkbox as per image
+  height: 24px;
+  position: absolute;
+  top: 12px; // Adjust to center vertically in iconWrapper
+  left: 50%;
+  transform: translateX(-50%); // Center horizontally
+  z-index: 1; // Ensure it's above other elements if needed
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px; // Space between icon and text
+  font-family: "Open Sans", sans-serif; // Using Open Sans as it visually matches
+  color: $color-dark-blue;
+  text-align: center;
+  line-height: 1.2; // Adjust line height for the two lines of text
+}
+
+.pendingText {
+  font-size: 13px; // Approximate font size
+  font-weight: 400; // Regular weight
+  white-space: nowrap; // Keep on single line
+}
+
+.approvalsText {
+  font-size: 16px; // Slightly larger for "Approvals"
+  font-weight: 600; // Bolder for "Approvals"
+  white-space: nowrap; // Keep on single line
+}

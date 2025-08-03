@@ -8,6 +8,7 @@ import {
     CardDescription,
     CardFooter,
 } from "../../../components/ui/card";
+import { useEffect } from "react";
 
 export interface Product {
     id: string;
@@ -23,6 +24,10 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
+    useEffect(() => {
+        console.log(`product : `, product.id);
+    });
+
     return (
         <Card className="flex h-full flex-col overflow-hidden">
             <CardHeader className="p-0">

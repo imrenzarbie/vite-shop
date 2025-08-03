@@ -1,0 +1,20 @@
+@use '../../../styles/theme.vars.scss';
+
+.row {
+}
+
+.cell {
+  composes: cell from './product-table.module.scss';
+}
+
+.image {
+  composes: image from './product-table.module.scss';
+}
+
+.price {
+  composes: price from './product-table.module.scss';
+}
+
+.quantity {
+  composes: qty from './product-table.module.scss';
+}
