@@ -2,15 +2,19 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ChevronLeft, ChevronRight, Search } from "lucide-react";
+import { ChevronLeft, ChevronRight, Search, ShoppingCart } from "lucide-react";
+import { useCartManager } from "./cart/use-cart-manager";
 import { ProductList } from "./product/product-list";
 import { fetchProducts } from "./services/product.api";
+import { CartSidebar } from "@/components";
 
 const PRODUCTS_PER_PAGE = 8;
 
 export function SearchPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const [searchTerm, setSearchTerm] = useState("");
+    const [isCartOpen, setIsCartOpen] = useState(false);
+    const { cart } = useCartManager();
 
     const {
         data: searchResults,
@@ -61,7 +65,8 @@ export function SearchPage() {
 
     return (
         <div className="container mx-auto px-4 py-8">
-            <div className="mb-8">
+            {/* Header with Search and Cart */}
+            <div className="mb-8 flex items-center justify-between">
                 <form onSubmit={handleSearch} className="flex gap-4 max-w-md">
                     <div className="relative flex-1">
                         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
@@ -75,6 +80,19 @@ export function SearchPage() {
                     </div>
                     <Button type="submit">Search</Button>
                 </form>
+
+                <Button
+                    variant="outline"
+                    onClick={() => setIsCartOpen(true)}
+                    className="relative">
+                    <ShoppingCart className="h-4 w-4 mr-2" />
+                    Cart
+                    {cart && cart.totalItems > 0 && (
+                        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                            {cart.totalItems}
+                        </span>
+                    )}
+                </Button>
             </div>
 
             {isLoading ? (
@@ -137,6 +155,11 @@ export function SearchPage() {
                     )}
                 </>
             )}
+
+            <CartSidebar
+                isOpen={isCartOpen}
+                onClose={() => setIsCartOpen(false)}
+            />
         </div>
     );
 }

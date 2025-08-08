@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AddToCartButton } from "./add-to-cart-button";
-import { Product } from "../../components/product-card";
+import { Product } from "../types/type";
+import AddToCartButton from "./add-to-cart-button";
 
 interface ProductCardProps {
     product: Product;
@@ -24,7 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
                         {product.description}
                     </p>
                     <p className="text-xl font-bold text-green-600">
-                        \( \${product.price.toFixed(2)} \)
+                        ${product.price.toFixed(2)}
                     </p>
                 </div>
 
