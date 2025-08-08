@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Layout from "../layout";
 import CatalogPage from "../features/catalog/catalog";
 import PreviouslyPurchasedPage from "@/features/previously-purchased/previously-purchaed-page";
+import { SearchPage } from "@/features/search/search-page";
 
 const routes = createBrowserRouter([
     {
@@ -14,8 +15,12 @@ const routes = createBrowserRouter([
             },
             {
                 path: "previously-purchased",
-                element: <PreviouslyPurchasedPage />
-            }
+                element: <PreviouslyPurchasedPage />,
+            },
+            {
+                path: "search",
+                element: <SearchPage />,
+            },
         ],
     },
 ]);
