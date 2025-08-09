@@ -1,6 +1,10 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
-import { addToCart, updateCartQuantity, removeFromCart } from "../services/api";
+import {
+    addToCart,
+    updateCartQuantity,
+    removeFromCart,
+} from "../services/cart.api";
 import { Cart, CartItem, Product } from "../types/type";
 
 const CART_QUERY_KEY = ["cart"];

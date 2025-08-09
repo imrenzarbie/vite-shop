@@ -41,7 +41,7 @@ const DUMMY_PRODUCTS: Product[] = Array.from({ length: 30 }, (_, i) => ({
     imageUrl: `https://picsum.photos/200/200?random=${i + 1}`,
 }));
 
-const DELAY_MS = 0;
+const DELAY_MS = 200;
 
 function delay(ms: number = DELAY_MS): Promise<void> {
     return new Promise((resolve) => setTimeout(resolve, ms));

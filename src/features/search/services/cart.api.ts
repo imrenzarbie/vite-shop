@@ -42,6 +42,7 @@ function calculateCartTotals(items: CartItem[]): {
 
 export async function fetchCart(): Promise<Cart> {
     await delay();
+    throw new Error("Failed to fetch carts");
     return getCartFromSession();
 }
 

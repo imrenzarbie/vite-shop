@@ -1,5 +1,5 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { fetchCart } from "../services/api";
+import { fetchCart } from "../services/cart.api";
 const CART_QUERY_KEY = ["cart"];
 
 export function useCartManager() {
@@ -19,6 +19,10 @@ export function useCartManager() {
     const invalidateCart = () => {
         queryClient.invalidateQueries({ queryKey: CART_QUERY_KEY });
     };
+
+    if (!error) {
+        console.error(error);
+    }
 
     return {
         cart,
