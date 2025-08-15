@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router";
-import App from "../App";
 import Layout from "../layout";
 import CatalogPage from "../features/catalog/catalog";
 
