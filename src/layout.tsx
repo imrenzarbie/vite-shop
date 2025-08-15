@@ -13,9 +13,9 @@ const Layout = () => {
                     </ScrollArea>
                 </main>
 
-                <div className="order-2 md:order-2 h-full w-full md:w-72 lg:w-80 border-l border-border bg-card flex flex-col overflow-hidden">
-                    {/* <CartSidebar cartItems={cartItems} /> */}
-                </div>
+                {/* <div className="order-2 md:order-2 h-full w-full md:w-72 lg:w-80 border-l border-border bg-card flex flex-col overflow-hidden">
+                    {/* <CartSidebar cartItems={cartItems} />
+                </div> */}
             </div>
         </div>
     );
